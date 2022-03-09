@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swiper, { SwiperOptions, Pagination } from 'swiper';
 
 @Component({
   selector: 'app-harbor',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HarborPage implements OnInit {
 
-  constructor() { }
-
   title = 'Welcome';
 
+  constructor() { }
+
+  public swiperConfig: SwiperOptions = {
+    pagination: true,
+    observer: true,
+    observeParents: true
+  };
+
   ngOnInit() {
+    Swiper.use([Pagination]);
   }
 
 }

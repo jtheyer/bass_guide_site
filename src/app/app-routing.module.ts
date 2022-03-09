@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { HarborPage } from './harbor/harbor.page';
+
 //Note* Order matters
 const routes: Routes = [
   {
@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'harbor', 
-    component: HarborPage
+    loadChildren: () => import('./harbor/harbor.module').then(m => m.HarborPageModule)
   },
   {
     path: 'about',

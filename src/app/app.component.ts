@@ -9,5 +9,5 @@ export class AppComponent {
     { title: 'Harbor', url: 'harbor', icon: 'home' },
     { title: 'About', url: 'about', icon: 'help' },
   ];
-  constructor() {}
+  constructor() { }
 }

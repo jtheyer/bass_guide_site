@@ -7,6 +7,56 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-header collapse="condense">
+          <ion-toolbar>
+            <ion-title size="large">{{ title }}</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div id="jumbotron">
+          <ion-img src="../../assets/images/jumbotron.jpg"></ion-img>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div id="container">
+          <strong class="capitalize">{{ title }}</strong>
+          <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI
+              Components</a></p>
+          <swiper [config]="swiperConfig">
+            <ng-template swiperSlide> <img src="../../assets/images/1.jpg" /> </ng-template>
+            <ng-template swiperSlide> <img src="../../assets/images/2.jpg" /> </ng-template>
+            <ng-template swiperSlide> <img src="../../assets/images/3.jpg" /> </ng-template>
+            <ng-template swiperSlide> <img src="../../assets/images/4.jpg" /> </ng-template>
+            <ng-template swiperSlide> <img src="../../assets/images/5.jpg" /> </ng-template>
+            <ng-template swiperSlide> <img src="../../assets/images/6.jpg" /> </ng-template>
+            <ng-template swiperSlide> <img src="../../assets/images/7.jpg" /> </ng-template>
+          </swiper>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -17,5 +67,36 @@
   <div id="container">
     <strong class="capitalize">{{ title }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <swiper [config]="swiperConfig">
+      <ng-template swiperSlide> <img src="../../assets/images/largemouth_bass.jpg" /> </ng-template>
+      <ng-template swiperSlide> <img src="../../assets/images/smallie.jpg" /> </ng-template>
+      <ng-template swiperSlide> <img src="../../assets/images/musky.jpg" /> </ng-template>
+    </swiper>
   </div>
-</ion-content>
+
+   <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div id="jumbotron">
+          <ion-img src="../../assets/images/jumbotron.jpg"></ion-img>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h2>2nd row H2</h2>
+        <div id="container">
+          <strong class="capitalize">{{ title }}</strong>
+          <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+          <swiper [config]="swiperConfig">
+            <ng-template swiperSlide><img src="../../assets/images/largemouth_bass.jpg" /></ng-template>
+            <ng-template swiperSlide>Slide 2</ng-template>
+            <ng-template swiperSlide>Slide 3</ng-template>
+          </swiper>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+</ion-content> -->
