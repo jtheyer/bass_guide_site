@@ -19,16 +19,14 @@ export class HarborPage implements AfterContentChecked {
 
   public swiperConfig: SwiperOptions = {
     autoplay: {
-      delay: 3000,
+      delay: 4000,
       disableOnInteraction: true,
     },
     pagination: true,
-    // observer: true,
-    // observeParents: true,
-    // slidesPerView: 3,
     slidesPerView: 'auto',
     effect: 'cube',
-    loop: true
+    loop: true,
+    speed: 1500
   };
 
   ngAfterContentChecked(): void {
@@ -36,5 +34,15 @@ export class HarborPage implements AfterContentChecked {
       this.swiper.updateSwiper({});
     }
   }
+
+  sliderImages = [
+    'assets/images/1.jpg',
+    'assets/images/2.jpg',
+    'assets/images/3.jpg',
+    'assets/images/4.jpg',
+    'assets/images/5.jpg',
+    'assets/images/6.jpg',
+    'assets/images/7.jpg',
+  ]
 
 }
