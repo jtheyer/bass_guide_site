@@ -1,4 +1,4 @@
-import { AfterContentChecked, Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { AfterContentChecked, Component, ViewChild } from '@angular/core';
 import { SwiperComponent } from 'swiper/angular';
 import Swiper, { SwiperOptions, Autoplay, Pagination, EffectCube } from 'swiper';
 import { IonicSlides } from '@ionic/angular';
