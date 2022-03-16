@@ -1,13 +1,15 @@
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
-  <ion-title>{{title}}</ion-title>
-</ion-toolbar>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
 
 <ion-content>
   <div id="jumbotron">
-    <ion-img src="../../assets/images/jumbotron.jpg"></ion-img>
+    <img src="assets/images/jumbotron.jpg" />
   </div>
 
   <div class="spacer">
