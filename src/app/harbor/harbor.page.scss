@@ -12,6 +12,20 @@ swiper {
     max-height: 600px;
 }
 
+.swiper-div {
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 // #jumbotron {
 //   
 // }
+
+.spacer {
+    padding: 20px;
+    margin-bottom: 30px !important;
+    background-color: var(--ion-item-background) !important;
+    height: 20px;
+    width: 100%;
+}
