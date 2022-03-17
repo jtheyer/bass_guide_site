@@ -16,11 +16,17 @@ const routes: Routes = [
     path: 'about',
     loadChildren: () => import('./about/about.module').then(m => m.AboutPageModule)
   },
+    {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then( m => m.BlogPageModule)
+  },
   {
     path: '**',
     redirectTo: '/harbor',
     pathMatch: 'full'
   },
+
+
 ];
 
 @NgModule({
