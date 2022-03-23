@@ -4,6 +4,14 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { environment } from '../environments/environment';
+// import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+// import { provideAuth,getAuth } from '@angular/fire/auth';
+// import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+
+import { AuthService } from './services/auth.service';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 @NgModule({
   declarations: [/*are to make directives (including components and pipes) 
@@ -19,13 +27,21 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
+    // provideFirebaseApp(() => initializeApp(environment.firebase)),
+    // provideAuth(() => getAuth()),
+    // provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
   ],
   providers: [{/*are to make services and values known to DI (dependency injection).
      They are added to the root scope and they are injected to other 
      services or directives that have them as dependency. */
     provide: RouteReuseStrategy,
     useClass: IonicRouteStrategy
-  }],
+  },
+  AuthService,
+  ],
   bootstrap: [AppComponent],
 })
+
 export class AppModule { }

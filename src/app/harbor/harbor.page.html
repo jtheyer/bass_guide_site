@@ -4,31 +4,47 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button class="account-btn" (click)="authService.GoogleAuth()">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
+
+
 <ion-content>
-  <div id="jumbotron">
-    <img src="assets/images/jumbotron.jpg" />
-  </div>
+  <ion-grid>
+    <div id="jumbotron">
+      <img src="assets/images/jumbotron.jpg" />
+    </div>
 
-  <div class="spacer">
-    <p>I'm happy to introduce to you a new source for Northeastern
-      anglers. Here, you will find a rich growing database
-      accompanied by robust tools to help the new and salty alike.
-      Tight lines!
-    </p>
-  </div>
-  <br>
+    <ion-row class="text-row">
+      <ion-col class="text-col">
+        <div>
+          <p class="welcome-text">I'm happy to introduce to you a new source for Northeastern
+            anglers. Here, you will find a rich growing database
+            accompanied by robust tools to help the new and salty alike.
+            Tight lines!
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
 
-  <div class="swiper-div">
-    <swiper #swiper [config]="swiperConfig">
-      <ng-template swiperSlide *ngFor="let slide of sliderImages">
-        <div><img [src]="slide" /></div>
-      </ng-template>
-    </swiper>
-  </div>
-
-  <br>
-  <br>
+    <ion-row>
+      <ion-col>
+        <div class="swiper-div">
+          <swiper #swiper [config]="swiperConfig">
+            <ng-template swiperSlide *ngFor="let slide of sliderImages">
+              <div><img [src]="slide" /></div>
+            </ng-template>
+          </swiper>
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <br>
+    <br>
+  </ion-grid>
 </ion-content>
