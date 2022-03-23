@@ -2,9 +2,31 @@ ion-menu-button {
     color: var(--ion-color-primary);
 }
 
-img {
-    width: 100%;
-    display: block;
+.account-btn {
+    color: var(--ion-color-primary);
+    margin-right: 30px !important; 
+}
+
+// #jumbotron {
+//   
+// }
+
+.text-row {
+    margin-top: 10px;
+}
+
+.text-col {
+    padding: 0px 25px 0px 25px;
+}
+
+.welcome-text {
+    font-size: large;
+}
+
+.swiper-div {
+    padding-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 swiper {
@@ -12,20 +34,7 @@ swiper {
     max-height: 600px;
 }
 
-.swiper-div {
-    padding-top: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-// #jumbotron {
-//   
-// }
-
-.spacer {
-    padding: 20px;
-    margin-bottom: 30px !important;
-    background-color: var(--ion-item-background) !important;
-    height: 20px;
+img {
     width: 100%;
+    display: block;
 }
