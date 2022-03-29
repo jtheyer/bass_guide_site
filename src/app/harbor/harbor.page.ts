@@ -2,9 +2,10 @@ import { AfterContentChecked, Component, ViewChild } from '@angular/core';
 import { SwiperComponent } from 'swiper/angular';
 import Swiper, { SwiperOptions, Autoplay, Pagination, EffectCube } from 'swiper';
 import { IonicSlides } from '@ionic/angular';
-import { AuthService } from '../services/auth.service'
+// import { AuthService } from '../services/auth.service'
 
 Swiper.use([Autoplay, Pagination, EffectCube, IonicSlides]);
+
 
 @Component({
   selector: 'app-harbor',
@@ -15,8 +16,8 @@ export class HarborPage implements AfterContentChecked {
   @ViewChild('swiper') swiper: SwiperComponent;
 
   title = 'Welcome';
-
-  constructor(public authService: AuthService) { }
+  constructor() {}
+  // constructor(public authService: AuthService) {}
 
   public swiperConfig: SwiperOptions = {
     autoplay: {

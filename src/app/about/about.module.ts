@@ -5,14 +5,18 @@ import { IonicModule } from '@ionic/angular';
 
 import { AboutPageRoutingModule } from './about-routing.module';
 import { AboutPage } from './about.page';
+import { UserMenuPopover } from '../user-menu/user-menu-popover';
 
 @NgModule({
+  declarations: [
+    AboutPage,
+    UserMenuPopover
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     AboutPageRoutingModule,
-  ],
-  declarations: [AboutPage]
+  ]
 })
 export class AboutPageModule {}
