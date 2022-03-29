@@ -5,9 +5,7 @@
     </ion-buttons>
     <ion-title>{{ title }}</ion-title>
     <ion-buttons slot="end">
-      <ion-button class="account-btn" (click)="authService.GoogleAuth()" >
-        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
-      </ion-button>
+      <user-menu></user-menu>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

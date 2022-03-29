@@ -9,9 +9,9 @@ import { environment } from '../environments/environment';
 // import { provideAuth,getAuth } from '@angular/fire/auth';
 // import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
-import { AuthService } from './services/auth.service';
-import { AngularFireModule } from '@angular/fire/compat';
-import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+// import { AuthService } from './services/auth.service';
+import { AngularFireModule } from '@angular/fire/compat'; //main entry 
+import { AngularFireAuthModule } from '@angular/fire/compat/auth'; //supply individual module
 
 @NgModule({
   declarations: [/*are to make directives (including components and pipes) 
@@ -31,7 +31,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     // provideAuth(() => getAuth()),
     // provideFirestore(() => getFirestore()),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
+    AngularFireAuthModule, //this gets injected
   ],
   providers: [{/*are to make services and values known to DI (dependency injection).
      They are added to the root scope and they are injected to other 
@@ -39,7 +39,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     provide: RouteReuseStrategy,
     useClass: IonicRouteStrategy
   },
-  AuthService,
+  // AuthService,
   ],
   bootstrap: [AppComponent],
 })

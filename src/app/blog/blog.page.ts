@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../services/auth.service';
+// import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-blog',
@@ -10,7 +10,7 @@ export class BlogPage implements OnInit {
 
   title = "Catch, Record, Release..."
 
-  constructor(public authService: AuthService) { }
+  constructor() { }
 
   ngOnInit() {
   }
