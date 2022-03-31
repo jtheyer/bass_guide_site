@@ -12,6 +12,7 @@ import { environment } from '../environments/environment';
 // import { AuthService } from './services/auth.service';
 import { AngularFireModule } from '@angular/fire/compat'; //main entry 
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'; //supply individual module
+// import { UserMenuPopover } from './user-menu/user-menu-popover';
 
 @NgModule({
   declarations: [/*are to make directives (including components and pipes) 
@@ -19,6 +20,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth'; //supply indi
     Selectors of directives, components or pipes are only matched against 
     the HTML if they are declared or imported.  */
     AppComponent,
+    // UserMenuPopover
   ],
   entryComponents: [],
 
@@ -40,6 +42,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth'; //supply indi
     useClass: IonicRouteStrategy
   },
   // AuthService,
+  ],
+  exports: [
+    // UserMenuPopover
   ],
   bootstrap: [AppComponent],
 })

@@ -4,19 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { BlogPageRoutingModule } from './blog-routing.module';
 import { BlogPage } from './blog.page';
-import { UserMenuPopover } from '../user-menu/user-menu-popover';
+import { UserMenuModule } from '../user-menu/user-menu.module';
  
 @NgModule({
   declarations: [
-    BlogPage,
-    UserMenuPopover
+    BlogPage
   ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BlogPageRoutingModule
-  ]
-  
+    BlogPageRoutingModule,
+    UserMenuModule
+  ],
+  exports: []
 })
+
 export class BlogPageModule {}

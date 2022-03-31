@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-blog',
@@ -8,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPage implements OnInit {
 
-  title = "Catch, Record, Release..."
+  title = "CRR"
 
   constructor() { }
 

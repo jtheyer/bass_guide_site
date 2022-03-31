@@ -4,22 +4,23 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { HarborPageRoutingModule } from './harbor-routing.module';
 import { HarborPage } from './harbor.page';
-import { UserMenuPopover } from '../user-menu/user-menu-popover';
+import { UserMenuModule } from '../user-menu/user-menu.module';
 
 import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
     HarborPage,
-    UserMenuPopover
   ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     HarborPageRoutingModule,
-    SwiperModule
+    SwiperModule,
+    UserMenuModule
   ],
-  
+  exports: [ ]
 })
+
 export class HarborPageModule {}

@@ -21,8 +21,10 @@ export class UserMenuComponent implements OnInit {
   loginGoogle() {
     this.fireAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider())
       .then((success) => {
+        console.log(success.user);
+        console.log(success);
         console.log('Successful login!');
-        this.popoverController.dismiss()
+        this.popoverController.dismiss();
       })
       .catch((err) => console.log(err));
   }
@@ -35,6 +37,5 @@ export class UserMenuComponent implements OnInit {
       })
       .catch((err) => console.log(err))
   }
-
 
 }
