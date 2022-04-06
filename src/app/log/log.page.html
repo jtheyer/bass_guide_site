@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+    <ion-buttons slot="end">
+      <user-menu></user-menu>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row class="ion-align-items-start">
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-center">
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-align-items-end">
+      <ion-col>
+        <div>1 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>2 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>3 of 4</div>
+      </ion-col>
+      <ion-col>
+        <div>4 of 4 # # #</div>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <!-- <ion-tab-button [routerLink]="['/spring']"> -->
+      <!-- <ion-tab-button tab="spring" [routerLink]="['blog/spring']"> -->
+      <ion-tab-button tab="spring">
+        <ion-icon name="rainy"></ion-icon>
+        <ion-label>Spring</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="summer">
+        <ion-icon name="sunny"></ion-icon>
+        <ion-label>Summer</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="fall">
+        <ion-icon name="leaf"></ion-icon>
+        <ion-label>Fall</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="transitions">
+        <ion-icon name="git-compare"></ion-icon>
+        <!-- <ion-icon name="swap"></ion-icon> !!enable this when ionic fixes their shit
+        ..and won't return a 404 (can't even download from website) -->
+        <ion-label>Transitions</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+</ion-content>
